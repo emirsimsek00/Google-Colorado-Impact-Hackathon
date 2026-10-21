@@ -136,7 +136,7 @@ The interface uses a white and neutral-gray foundation with clear Google-style b
 
 - **Action Blue:** Primary actions, keyboard focus, awaiting-inspection routes, and selected accents.
 - **Deep Action Blue:** Links, selected navigation text, and primary-button hover.
-- **Selection Blue Tint:** Selected navigation and the first ranked task number.
+- **Selection Blue Tint:** Selected navigation.
 
 ### Secondary
 
@@ -152,7 +152,7 @@ The interface uses a white and neutral-gray foundation with clear Google-style b
 - **Secondary Gray:** Supporting copy, metadata, and neutral icons.
 - **Divider Gray:** Panel, shell, toolbar, and field separation.
 - **Quiet Surface:** Announcement, notice, detail, and hover backgrounds.
-- **Inset Gray:** Identity blocks, resting rank numbers, neutral chips, and control hover.
+- **Inset Gray:** Identity blocks, neutral chips, and control hover.
 - **White:** Workspace, navigation, panels, controls, and label plates over the map.
 
 **The State Meaning Rule.** Use blue for awaiting inspection, green for inspected, yellow for repair needed, and red for blocked access. Preserve visible state labels and the legend; color alone is insufficient.
@@ -225,7 +225,7 @@ Square icon-and-label rows use muted resting text. Active navigation uses a pale
 
 ### Explained Task Rows
 
-A square rank block anchors title, work type, quantities, and reason. The first block receives a blue selection tint. Resting rows are white with fine separators; fine-pointer hover adds a quiet neutral ground. Eligible tasks and constrained tasks retain distinct sections with an explanation of the constraint.
+Plain gray rank numbers anchor title, work type, quantities, and reason. Rank numbers and crew availability labels have transparent backgrounds; alignment and dividers provide structure. Resting rows are white with fine separators; fine-pointer hover adds a quiet neutral ground. Eligible tasks and constrained tasks retain distinct sections with an explanation of the constraint.
 
 ### Geographic Network
 
