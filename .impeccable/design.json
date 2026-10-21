@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T19:55:30.280831+00:00",
+  "title": "Design System: Gridwell",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "Action Blue",
+        "tonalRamp": [
+          "oklch(15% 0.1946 257.86)",
+          "oklch(27% 0.1946 257.86)",
+          "oklch(39% 0.1946 257.86)",
+          "oklch(51% 0.1946 257.86)",
+          "oklch(63% 0.1946 257.86)",
+          "oklch(75% 0.1946 257.86)",
+          "oklch(87% 0.1946 257.86)",
+          "oklch(95% 0.1946 257.86)"
+        ]
+      },
+      "blue-deep": {
+        "role": "primary",
+        "displayName": "Deep Action Blue",
+        "tonalRamp": [
+          "oklch(15% 0.1807 258.26)",
+          "oklch(27% 0.1807 258.26)",
+          "oklch(39% 0.1807 258.26)",
+          "oklch(51% 0.1807 258.26)",
+          "oklch(63% 0.1807 258.26)",
+          "oklch(75% 0.1807 258.26)",
+          "oklch(87% 0.1807 258.26)",
+          "oklch(95% 0.1807 258.26)"
+        ]
+      },
+      "blue-tint": {
+        "role": "primary",
+        "displayName": "Selection Blue Tint",
+        "tonalRamp": [
+          "oklch(15% 0.0207 261.77)",
+          "oklch(27% 0.0207 261.77)",
+          "oklch(39% 0.0207 261.77)",
+          "oklch(51% 0.0207 261.77)",
+          "oklch(63% 0.0207 261.77)",
+          "oklch(75% 0.0207 261.77)",
+          "oklch(87% 0.0207 261.77)",
+          "oklch(95% 0.0207 261.77)"
+        ]
+      },
+      "red": {
+        "role": "secondary",
+        "displayName": "Unsafe Red",
+        "tonalRamp": [
+          "oklch(15% 0.2063 29.01)",
+          "oklch(27% 0.2063 29.01)",
+          "oklch(39% 0.2063 29.01)",
+          "oklch(51% 0.2063 29.01)",
+          "oklch(63% 0.2063 29.01)",
+          "oklch(75% 0.2063 29.01)",
+          "oklch(87% 0.2063 29.01)",
+          "oklch(95% 0.2063 29.01)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Inspected Green",
+        "tonalRamp": [
+          "oklch(15% 0.1410 148.39)",
+          "oklch(27% 0.1410 148.39)",
+          "oklch(39% 0.1410 148.39)",
+          "oklch(51% 0.1410 148.39)",
+          "oklch(63% 0.1410 148.39)",
+          "oklch(75% 0.1410 148.39)",
+          "oklch(87% 0.1410 148.39)",
+          "oklch(95% 0.1410 148.39)"
+        ]
+      },
+      "repair-yellow": {
+        "role": "secondary",
+        "displayName": "Repair Yellow",
+        "tonalRamp": [
+          "oklch(15% 0.1587 77.10)",
+          "oklch(27% 0.1587 77.10)",
+          "oklch(39% 0.1587 77.10)",
+          "oklch(51% 0.1587 77.10)",
+          "oklch(63% 0.1587 77.10)",
+          "oklch(75% 0.1587 77.10)",
+          "oklch(87% 0.1587 77.10)",
+          "oklch(95% 0.1587 77.10)"
+        ]
+      },
+      "yellow": {
+        "role": "secondary",
+        "displayName": "Incident Yellow",
+        "tonalRamp": [
+          "oklch(15% 0.1673 75.99)",
+          "oklch(27% 0.1673 75.99)",
+          "oklch(39% 0.1673 75.99)",
+          "oklch(51% 0.1673 75.99)",
+          "oklch(63% 0.1673 75.99)",
+          "oklch(75% 0.1673 75.99)",
+          "oklch(87% 0.1673 75.99)",
+          "oklch(95% 0.1673 75.99)"
+        ]
+      },
+      "green-tint": {
+        "role": "secondary",
+        "displayName": "Reviewed Green Tint",
+        "tonalRamp": [
+          "oklch(15% 0.0199 154.90)",
+          "oklch(27% 0.0199 154.90)",
+          "oklch(39% 0.0199 154.90)",
+          "oklch(51% 0.0199 154.90)",
+          "oklch(63% 0.0199 154.90)",
+          "oklch(75% 0.0199 154.90)",
+          "oklch(87% 0.0199 154.90)",
+          "oklch(95% 0.0199 154.90)"
+        ]
+      },
+      "red-tint": {
+        "role": "secondary",
+        "displayName": "Warning Red Tint",
+        "tonalRamp": [
+          "oklch(15% 0.0221 24.44)",
+          "oklch(27% 0.0221 24.44)",
+          "oklch(39% 0.0221 24.44)",
+          "oklch(51% 0.0221 24.44)",
+          "oklch(63% 0.0221 24.44)",
+          "oklch(75% 0.0221 24.44)",
+          "oklch(87% 0.0221 24.44)",
+          "oklch(95% 0.0221 24.44)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Graphite Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0058 271.18)",
+          "oklch(27% 0.0058 271.18)",
+          "oklch(39% 0.0058 271.18)",
+          "oklch(51% 0.0058 271.18)",
+          "oklch(63% 0.0058 271.18)",
+          "oklch(75% 0.0058 271.18)",
+          "oklch(87% 0.0058 271.18)",
+          "oklch(95% 0.0058 271.18)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Secondary Gray",
+        "tonalRamp": [
+          "oklch(15% 0.0094 253.91)",
+          "oklch(27% 0.0094 253.91)",
+          "oklch(39% 0.0094 253.91)",
+          "oklch(51% 0.0094 253.91)",
+          "oklch(63% 0.0094 253.91)",
+          "oklch(75% 0.0094 253.91)",
+          "oklch(87% 0.0094 253.91)",
+          "oklch(95% 0.0094 253.91)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Divider Gray",
+        "tonalRamp": [
+          "oklch(15% 0.0059 264.53)",
+          "oklch(27% 0.0059 264.53)",
+          "oklch(39% 0.0059 264.53)",
+          "oklch(51% 0.0059 264.53)",
+          "oklch(63% 0.0059 264.53)",
+          "oklch(75% 0.0059 264.53)",
+          "oklch(87% 0.0059 264.53)",
+          "oklch(95% 0.0059 264.53)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Quiet Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0017 247.84)",
+          "oklch(27% 0.0017 247.84)",
+          "oklch(39% 0.0017 247.84)",
+          "oklch(51% 0.0017 247.84)",
+          "oklch(63% 0.0017 247.84)",
+          "oklch(75% 0.0017 247.84)",
+          "oklch(87% 0.0017 247.84)",
+          "oklch(95% 0.0017 247.84)"
+        ]
+      },
+      "neutral-tint": {
+        "role": "neutral",
+        "displayName": "Inset Gray",
+        "tonalRamp": [
+          "oklch(15% 0.0025 228.78)",
+          "oklch(27% 0.0025 228.78)",
+          "oklch(39% 0.0025 228.78)",
+          "oklch(51% 0.0025 228.78)",
+          "oklch(63% 0.0025 228.78)",
+          "oklch(75% 0.0025 228.78)",
+          "oklch(87% 0.0025 228.78)",
+          "oklch(95% 0.0025 228.78)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(27% 0.0000 89.88)",
+          "oklch(39% 0.0000 89.88)",
+          "oklch(51% 0.0000 89.88)",
+          "oklch(63% 0.0000 89.88)",
+          "oklch(75% 0.0000 89.88)",
+          "oklch(87% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Summary and comparison values with tabular numerals."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Main page heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Main panel headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Root reading and review-list typography."
+      },
+      "explanation": {
+        "displayName": "Explanation",
+        "purpose": "Readable modal descriptions, capped at 75ch where established."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Compact metadata; not incidental tiny captions."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Standard action labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "dialog",
+        "value": "0 16px 50px #20212426",
+        "purpose": "Focused modal work."
+      },
+      {
+        "name": "mobile-rail",
+        "value": "8px 0 30px #20212426",
+        "purpose": "Open mobile navigation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "pressed-feedback",
+        "value": "transform 120ms cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Enabled button pressed scale to .98."
+      },
+      {
+        "name": "background-feedback",
+        "value": "background-color 120ms ease",
+        "purpose": "Button state background feedback; hover limited to fine pointers."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none; scroll-behavior: auto",
+        "purpose": "User preference disables movement."
+      },
+      {
+        "name": "map-controls",
+        "value": "duration: 0",
+        "purpose": "Immediate map fit and zoom changes."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1600px"
+      },
+      {
+        "name": "medium-shell",
+        "value": "1200px"
+      },
+      {
+        "name": "stacked-content",
+        "value": "1020px"
+      },
+      {
+        "name": "mobile",
+        "value": "720px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Square action with shared focus and short pressed feedback.",
+      "html": "<button class=\"ds-primary\">Review plan</button>",
+      "css": ".ds-primary{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:9px 13px;border:1px solid var(--line,#dadce0);border-radius:0;font-size:12px;font-weight:500;cursor:pointer;transition:transform 120ms cubic-bezier(.23,1,.32,1),background-color 120ms ease;background:var(--blue,#1a73e8);color:#fff;border-color:var(--blue,#1a73e8);}@media(hover:hover) and (pointer:fine){.ds-primary:hover{background:#1967d2;}}.ds-primary:active:not(:disabled){transform:scale(.98);}.ds-primary:focus-visible{outline:2px solid var(--blue,#1a73e8);outline-offset:3px;}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none;}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Square action with shared focus and short pressed feedback.",
+      "html": "<button class=\"ds-secondary\">Compare scenarios</button>",
+      "css": ".ds-secondary{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:9px 13px;border:1px solid var(--line,#dadce0);border-radius:0;font-size:12px;font-weight:500;cursor:pointer;transition:transform 120ms cubic-bezier(.23,1,.32,1),background-color 120ms ease;background:#fff;color:var(--ink,#202124);}@media(hover:hover) and (pointer:fine){.ds-secondary:hover{background:#f8f9fa;}}.ds-secondary:active:not(:disabled){transform:scale(.98);}.ds-secondary:focus-visible{outline:2px solid var(--blue,#1a73e8);outline-offset:3px;}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none;}}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Square action with shared focus and short pressed feedback.",
+      "html": "<button class=\"ds-ghost\">Reset demo</button>",
+      "css": ".ds-ghost{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:9px 13px;border:1px solid var(--line,#dadce0);border-radius:0;font-size:12px;font-weight:500;cursor:pointer;transition:transform 120ms cubic-bezier(.23,1,.32,1),background-color 120ms ease;background:transparent;color:var(--muted,#5f6368);border-color:transparent;}@media(hover:hover) and (pointer:fine){.ds-ghost:hover{background:#f8f9fa;}}.ds-ghost:active:not(:disabled){transform:scale(.98);}.ds-ghost:focus-visible{outline:2px solid var(--blue,#1a73e8);outline-offset:3px;}@media(prefers-reduced-motion:reduce){.ds-ghost{transition:none;}}"
+    },
+    {
+      "name": "Reviewed Button",
+      "kind": "button",
+      "refersTo": "button-reviewed",
+      "description": "Square action with shared focus and short pressed feedback.",
+      "html": "<button class=\"ds-reviewed\">Plan reviewed \u00b7 view summary</button>",
+      "css": ".ds-reviewed{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:9px 13px;border:1px solid var(--line,#dadce0);border-radius:0;font-size:12px;font-weight:500;cursor:pointer;transition:transform 120ms cubic-bezier(.23,1,.32,1),background-color 120ms ease;background:#e6f4ea;color:#137333;border-color:#ceead6;}@media(hover:hover) and (pointer:fine){.ds-reviewed:hover{background:#f8f9fa;}}.ds-reviewed:active:not(:disabled){transform:scale(.98);}.ds-reviewed:focus-visible{outline:2px solid var(--blue,#1a73e8);outline-offset:3px;}@media(prefers-reduced-motion:reduce){.ds-reviewed{transition:none;}}"
+    },
+    {
+      "name": "Scenario Select",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Square native selector with a visible label.",
+      "html": "<label class=\"ds-field-label\">Field report<select class=\"ds-field\"><option>Hospital backup power lost</option><option>Additional crew available</option></select></label>",
+      "css": ".ds-field-label{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);display:grid;gap:8px;font-size:12px;color:var(--muted,#5f6368);}.ds-field{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);border:1px solid #bdc1c6;border-radius:0;min-height:35px;padding:7px 24px 7px 10px;background:#fff;color:var(--ink,#202124);font-size:12px;}.ds-field:focus-visible{outline:2px solid var(--blue,#1a73e8);outline-offset:3px;}"
+    },
+    {
+      "name": "Navigation Rows",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Square active and resting icon-and-label navigation.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Dashboard\"><button class=\"ds-nav-item ds-active\" aria-current=\"page\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"/></svg>Overview</button><button class=\"ds-nav-item\">Priority board</button></nav>",
+      "css": ".ds-nav{display:grid;gap:5px;min-width:180px;}.ds-nav-item{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);display:flex;align-items:center;gap:11px;padding:11px 12px;min-height:43px;border:0;border-radius:0;background:transparent;color:var(--muted,#5f6368);font-size:12px;text-align:left;cursor:pointer;}.ds-nav-item.ds-active{color:#1967d2;background:#e8f0fe;font-weight:550;}@media(hover:hover) and (pointer:fine){.ds-nav-item:hover{background:#f1f3f4;}.ds-nav-item.ds-active:hover{background:#e8f0fe;}}.ds-nav-item:focus-visible{outline:2px solid var(--blue,#1a73e8);outline-offset:3px;}"
+    },
+    {
+      "name": "Positive State Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Square compact status label; its type is not a reading norm.",
+      "html": "<span class=\"ds-chip\"><span class=\"ds-dot\" aria-hidden=\"true\"></span>Inspected</span>",
+      "css": ".ds-chip{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);display:inline-flex;align-items:center;gap:5px;padding:4px 7px;border-radius:0;background:#e6f4ea;color:#137333;font-size:10px;}.ds-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green,#188038);}"
+    },
+    {
+      "name": "Work Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat square bordered work surface.",
+      "html": "<section class=\"ds-panel\"><div class=\"ds-panel-heading\"><h2>Network map</h2><p>Boulder County, Colorado \u00b7 Simulated feeder network</p></div><div class=\"ds-panel-content\">Real geography. Fictional utility overlay.</div></section>",
+      "css": ".ds-panel{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);border:1px solid var(--line,#dadce0);border-radius:0;background:#fff;color:var(--ink,#202124);overflow:hidden;}.ds-panel-heading{padding:15px 18px 13px;}.ds-panel-heading h2{margin:0;font-size:16px;font-weight:550;letter-spacing:-.2px;}.ds-panel-heading p{margin:5px 0 0;font-size:11px;line-height:1.4;color:var(--muted,#5f6368);}.ds-panel-content{padding:15px 18px;border-top:1px solid var(--line,#dadce0);font-size:13px;line-height:1.55;}"
+    },
+    {
+      "name": "Explained Task Row",
+      "kind": "custom",
+      "refersTo": "panel",
+      "description": "Selectable ranked task with reason and neutral hover.",
+      "html": "<button class=\"ds-task\"><span class=\"ds-rank\">1</span><span class=\"ds-task-copy\"><strong>Valley hospital feeder</strong><span>Inspection \u00b7 eligible</span><span>Critical facility report changes this priority.</span></span></button>",
+      "css": ".ds-task{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);display:flex;gap:10px;width:100%;text-align:left;padding:11px 7px;background:#fff;border:0;border-bottom:1px solid #e8eaed;border-radius:0;cursor:pointer;}.ds-rank{display:grid;place-items:center;flex-shrink:0;width:23px;height:23px;background:#e8f0fe;color:#1967d2;font-size:11px;}.ds-task-copy{display:grid;gap:5px;}.ds-task-copy strong{font-size:12px;color:var(--ink,#202124);font-weight:550;line-height:1.35;}.ds-task-copy>span{font-size:10px;line-height:1.45;color:var(--muted,#5f6368);}@media(hover:hover) and (pointer:fine){.ds-task:hover{background:#f8f9fa;}}.ds-task:focus-visible{outline:2px solid var(--blue,#1a73e8);outline-offset:3px;}"
+    },
+    {
+      "name": "Feeder Endpoint",
+      "kind": "custom",
+      "refersTo": "panel",
+      "description": "Circular network endpoint with a square label plate; no basemap is fabricated in this preview.",
+      "html": "<button class=\"ds-node\" aria-label=\"L02 hospital feeder, awaiting inspection\"><span class=\"ds-node-dot\"></span><span class=\"ds-node-label\">L02 Hospital feeder</span></button>",
+      "css": ".ds-node{font-family:var(--font,\"Google Sans Variable\",\"Google Sans\",sans-serif);display:flex;align-items:center;justify-content:center;position:relative;width:18px;height:18px;margin:8px 70px 35px;border:0;border-radius:0;background:transparent;padding:0;cursor:pointer;}.ds-node-dot{width:13px;height:13px;border:3px solid #fff;border-radius:50%;background:var(--blue,#1a73e8);box-shadow:0 0 0 1px var(--blue,#1a73e8);}.ds-node-label{position:absolute;top:18px;white-space:nowrap;padding:3px 5px;border:1px solid var(--line,#dadce0);border-radius:0;background:#fffffff5;color:var(--ink,#202124);font-size:11px;font-weight:500;pointer-events:none;}.ds-node:focus-visible{outline:2px solid var(--blue,#1a73e8);outline-offset:3px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Clear Operations Desk",
+    "overview": "Gridwell is a white, square-edged operational presentation surface. Google Sans carries every UI role, restrained gray dividers organize dense information, and blue identifies actions and pending inspection. Red, yellow, and green have explicit network-state meanings rather than serving as decoration.\n\nThe real Colorado basemap provides geographic context beneath fictional feeder, facility, and incident overlays. The interface keeps that distinction visible: it is a browser-local presentation dashboard, not a live utility system. Direct labels, explainable ranking, and a local operator-review state make the demonstration understandable without implying operational authority.",
+    "keyCharacteristics": [
+      "White ground, square containers, and fine gray dividers.",
+      "Self-hosted Google Sans across UI and vector-map labels.",
+      "Blue actions with red, yellow, and green route semantics.",
+      "Real geography with explicitly fictional utility overlays."
+    ],
+    "rules": [
+      {
+        "name": "The State Meaning Rule",
+        "body": "Use blue for awaiting inspection, green for inspected, yellow for repair needed, and red for blocked access. Preserve visible state labels and the legend; color alone is insufficient.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading Hierarchy Rule",
+        "body": "Use body or explanation typography for reading and compact labels for metadata. Small map attribution, badges, and footer captions are local exceptions, not a body-text norm.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Desk Rule",
+        "body": "Keep work panels flat. Reserve soft shadows for the modal dialog and open mobile navigation; endpoint rings indicate selection rather than elevation.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use self-hosted Google Sans for all UI text and local vector-map labels.",
+      "Do keep controls and containers square, with circles reserved for network endpoints and status dots.",
+      "Do preserve the route-state mapping, textual labels, and visible legend.",
+      "Do retain map attribution and a visible notice that utility and incident overlays are fictional.",
+      "Do maintain keyboard focus, named dialogs, and readable mobile access to network segments.",
+      "Do describe operator review as a local presentation state."
+    ],
+    "donts": [
+      "Don't reintroduce sage surfaces, rounded cards, decorative gradients, or slogans.",
+      "Don't turn tiny attribution or incidental captions into the default text scale.",
+      "Don't substitute real utility assets or fire claims for the synthetic overlay.",
+      "Don't imply that review dispatches crews, connects utility systems, or authorizes energization."
+    ]
+  }
+}
