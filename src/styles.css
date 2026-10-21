@@ -2117,3 +2117,288 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Keep the presentation focused on impact, the map, and the next task. */
+.workspace-label {
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.nav-item {
+  font-size: 14px;
+  min-height: 46px;
+}
+.sidebar-bottom > .nav-item {
+  font-size: 13px;
+}
+.topbar,
+.breadcrumb,
+.topbar-right {
+  font-size: 13px;
+}
+.page-heading {
+  margin-bottom: 22px;
+}
+.page-heading p {
+  font-size: 14px;
+}
+.metrics {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.metric-label {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+.metric > strong {
+  font-size: 36px;
+}
+.demo-copy strong {
+  font-size: 14px;
+}
+.demo-actions select,
+.demo-actions .button,
+.button {
+  font-size: 14px;
+}
+.demo-actions select {
+  max-width: 290px;
+}
+.safety-strip {
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+.panel-heading h2,
+.bottom-grid .panel-heading h2 {
+  font-size: 18px;
+}
+.priority-panel .panel-heading p {
+  font-size: 13px;
+  margin-top: 6px;
+}
+.priority-policy,
+.priority-policy select {
+  font-size: 13px;
+}
+.priority-policy select {
+  max-width: 170px;
+}
+.priority-list {
+  padding: 0 15px;
+}
+.task {
+  padding: 18px 2px;
+  gap: 12px;
+}
+.task-number {
+  width: 27px;
+  height: 27px;
+  font-size: 14px;
+}
+.task-title strong {
+  font-size: 16px;
+}
+.task-stats {
+  font-size: 13px;
+  flex-wrap: wrap;
+  gap: 5px 12px;
+  line-height: 1.5;
+  margin-top: 8px;
+  color: #5f6368;
+}
+.task-reason {
+  font-size: 14px;
+  line-height: 1.45;
+  margin-top: 8px;
+  color: #3c4043;
+}
+.task-reason.urgent-reason {
+  color: #b3261e;
+  font-weight: 500;
+}
+.blocked-summary {
+  font-size: 13px;
+  padding: 13px 18px;
+}
+.priority-footer > .button {
+  font-size: 14px;
+}
+.map-toolbar {
+  justify-content: flex-end;
+  font-size: 13px;
+}
+.map-toggles {
+  font-size: 13px;
+  gap: 20px;
+}
+.map-overlay-notice {
+  font-size: 12px;
+  letter-spacing: 0;
+  padding: 7px 9px;
+}
+.geo-node-label {
+  font-size: 13px;
+  padding: 4px 7px;
+}
+.geo-facility {
+  font-size: 12px;
+  padding: 4px 6px;
+}
+.legend {
+  font-size: 12px;
+  gap: 12px;
+}
+.event-list {
+  max-height: none;
+  padding-bottom: 17px;
+}
+.event {
+  padding-top: 15px;
+}
+.event h3,
+.crew strong {
+  font-size: 14px;
+}
+.event p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.crew {
+  padding: 13px 0;
+}
+.crew .badge {
+  font-size: 12px;
+}
+.text-button {
+  border: 0;
+  background: none;
+  padding: 4px 0;
+  font-size: 13px;
+  color: #1967d2;
+  white-space: nowrap;
+}
+.text-button:hover {
+  text-decoration: underline;
+}
+.history-entry {
+  padding: 5px 0 16px;
+  border-bottom: 1px solid var(--line);
+}
+.history-entry:last-child {
+  border: 0;
+}
+.history-entry h3 {
+  font-size: 15px;
+  margin: 15px 0 8px;
+}
+.history-entry p {
+  font-size: 14px;
+}
+.page-footer {
+  justify-content: flex-end;
+  padding-top: 12px;
+}
+.page-footer button {
+  font-size: 13px;
+}
+@media (max-width: 1200px) {
+  .metric-label {
+    font-size: 13px;
+  }
+  .nav-item {
+    font-size: 13px;
+  }
+  .demo-actions select,
+  .demo-actions .button {
+    font-size: 12px;
+  }
+  .task-title strong {
+    font-size: 15px;
+  }
+  .task-stats {
+    font-size: 13px;
+  }
+  .task-reason {
+    font-size: 13px;
+  }
+  .panel-heading h2 {
+    font-size: 17px;
+  }
+  .map-toggles {
+    font-size: 12px;
+  }
+  .legend {
+    font-size: 11px;
+  }
+}
+@media (max-width: 720px) {
+  .metric-label {
+    font-size: 12px;
+    min-height: 34px;
+  }
+  .metric > strong {
+    font-size: 34px;
+  }
+  .metrics {
+    padding: 0;
+  }
+  .demo-copy strong {
+    font-size: 14px;
+  }
+  .demo-actions select,
+  .demo-actions .button {
+    font-size: 11px;
+  }
+  .map-overlay-notice {
+    font-size: 11px;
+  }
+  .map-toggles {
+    font-size: 12px;
+  }
+  .task-title strong {
+    font-size: 16px;
+  }
+  .task-stats {
+    font-size: 13px;
+  }
+  .task-reason {
+    font-size: 14px;
+  }
+  .priority-policy,
+  .priority-policy select {
+    font-size: 13px;
+  }
+  .blocked-summary {
+    font-size: 12px;
+  }
+  .legend {
+    font-size: 11px;
+  }
+  .geographic-map-wrap {
+    min-height: 390px;
+  }
+  .event h3,
+  .crew strong {
+    font-size: 14px;
+  }
+  .event p {
+    font-size: 14px;
+  }
+  .mobile-line-list strong {
+    font-size: 13px;
+  }
+  .mobile-line-list small {
+    font-size: 12px;
+  }
+}
+@media (max-width: 720px) {
+  .mobile-line-list summary {
+    padding: 14px 0;
+    font-size: 14px;
+    color: #1967d2;
+    cursor: pointer;
+  }
+}

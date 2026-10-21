@@ -404,6 +404,11 @@
         "name": "The Flat Desk Rule",
         "body": "Keep work panels flat. Reserve soft shadows for the modal dialog and open mobile navigation; endpoint rings indicate selection rather than elevation.",
         "section": "elevation"
+      },
+      {
+        "name": "Overview clarity",
+        "body": "Keep impact, map and next tasks visible at readable sizes. Omit duplicate captions and small scenario/version boxes. Reveal full line names, history, crew roles and score detail on demand.",
+        "section": "layout"
       }
     ],
     "dos": [

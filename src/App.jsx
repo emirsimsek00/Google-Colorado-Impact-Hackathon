@@ -419,9 +419,7 @@ export default function App() {
           <span className="workspace-icon">
             <Zap size={16} />
           </span>
-          <div>
-            Colorado resilience<small>Presentation workspace</small>
-          </div>
+          <div>Colorado resilience</div>
           <ChevronDown size={14} />
         </div>
         <nav aria-label="Dashboard navigation">
@@ -441,22 +439,11 @@ export default function App() {
           ))}
         </nav>
         <div className="sidebar-bottom">
-          <div className="demo-label">
-            <span className="status-dot" />
-            Hackathon prototype
-          </div>
-
           <button className="nav-item" onClick={() => setModal("sources")}>
             <CircleHelp size={18} />
             About this demo
             <ArrowUpRight size={14} />
           </button>
-          <div className="profile">
-            <span className="avatar">OP</span>
-            <div>
-              Distribution operator<small>Demo role · human in control</small>
-            </div>
-          </div>
         </div>
       </aside>
       <div className="workspace">
@@ -470,16 +457,14 @@ export default function App() {
             >
               <Menu size={21} />
             </button>
-            <span>Operations</span>
-            <ChevronRight size={14} />
-            <strong>Restoration overview</strong>
+            <strong>Boulder County, Colorado</strong>
           </div>
           <div className="topbar-right">
             <span className="synthetic-label">
               <span className="status-dot" />
               Synthetic scenario
             </span>
-            <span className="topbar-date">Oct 21, 2026</span>
+
             <button
               className="icon-button"
               aria-label="About this prototype"
@@ -493,10 +478,7 @@ export default function App() {
           <div id="overview" className="page-heading">
             <div>
               <h1>Restoration overview</h1>
-              <p>
-                Inspection and repair priorities after a wildfire safety
-                shutoff.
-              </p>
+              <p>Valley district · Wildfire safety shutoff</p>
             </div>
             <div className="heading-actions">
               <Button icon={RotateCcw} kind="ghost" onClick={reset}>
@@ -510,16 +492,6 @@ export default function App() {
               </Button>
             </div>
           </div>
-          <div className="incident-strip">
-            <div>
-              <span className="incident-dot" />
-              <strong>Valley district PSPS</strong>
-              <span className="incident-id">Scenario CO–026</span>
-              <span className="incident-divider" />
-              <span>Post-shutoff inspection & repair planning</span>
-            </div>
-            <Badge tone="sage">Resilience</Badge>
-          </div>
           <section className="metrics" aria-label="Synthetic incident summary">
             <div className="metric">
               <span className="metric-label">
@@ -527,53 +499,27 @@ export default function App() {
                 <Users size={17} />
               </span>
               <strong>3,420</strong>
-              <span className="metric-foot">
-                Across 6 affected line segments
-              </span>
             </div>
             <div className="metric">
               <span className="metric-label">
                 Critical facilities affected
                 <HeartPulse size={17} />
               </span>
-              <strong>
-                {pendingFacilities}
-                <span className="metric-unit">facilities</span>
-              </strong>
-              <span className="metric-foot">
-                Hospital, water works & shelter
-              </span>
+              <strong>{pendingFacilities}</strong>
             </div>
             <div className="metric">
               <span className="metric-label">
                 Crews available
                 <Truck size={17} />
               </span>
-              <strong>
-                {crewCount}
-                <span className="metric-unit">of 3 crews</span>
-              </strong>
-              <span className="metric-foot">
-                {crewCount === 2
-                  ? "1 mutual-aid crew on standby"
-                  : "Mutual-aid crew added to model"}
-              </span>
+              <strong>{crewCount}</strong>
             </div>
             <div className="metric hazard-metric">
               <span className="metric-label">
-                Safety constraints
+                Blocked by unsafe access
                 <ShieldCheck size={17} />
               </span>
-              <strong>
-                {unsafe.length}
-                <span className="metric-unit">
-                  restricted {unsafe.length === 1 ? "line" : "lines"}
-                </span>
-              </strong>
-              <span className="metric-foot">
-                <span className="tiny-dot" />
-                Unsafe work excluded from queue
-              </span>
+              <strong>{unsafe.length}</strong>
             </div>
           </section>
           <section
@@ -584,8 +530,7 @@ export default function App() {
               <Radio size={20} />
             </div>
             <div className="demo-copy">
-              <strong>Update the scenario</strong>
-              <span>Choose an event to update the work order.</span>
+              <strong>Scenario update</strong>
             </div>
             <div className="demo-actions">
               <label className="sr-only" htmlFor="demo-event">
@@ -616,9 +561,8 @@ export default function App() {
           <div className="safety-strip">
             <ShieldCheck size={16} />
             <span>
-              <strong>Safety first, always.</strong> Inspect lines and repair
-              damage before restoration. Only utility procedures can authorize
-              re-energization.
+              Unsafe and upstream-blocked work stays excluded. Operators
+              authorize restoration.
             </span>
             <LockKeyhole size={14} />
           </div>
@@ -640,14 +584,8 @@ export default function App() {
               <div className="panel-heading">
                 <div>
                   <h2 id="priorities-title">Recommended next steps</h2>
-                  <p>
-                    Explainable ranking <span className="middle-dot">·</span>{" "}
-                    {reviewed
-                      ? "Operator reviewed"
-                      : "Awaiting operator review"}
-                  </p>
+                  <p>{reviewed ? "Reviewed" : "Awaiting operator review"}</p>
                 </div>
-                <span className="revision">v{revision}</span>
               </div>
               <div className="priority-policy">
                 <span>
@@ -669,10 +607,7 @@ export default function App() {
                   ))}
                 </select>
               </div>
-              <div className="queue-label">
-                <span>{eligible.length} ELIGIBLE TASKS</span>
-                <span>Safety + dependencies checked</span>
-              </div>
+
               <div className="priority-list">
                 {eligible.map((task, i) => (
                   <button
@@ -691,31 +626,26 @@ export default function App() {
                         <strong>{task.name}</strong>
                         <ArrowUpRight size={15} />
                       </div>
-                      <div className="task-type">
-                        {task.id}
-                        <span>·</span>
-                        {task.status === "repair"
-                          ? "Repair needed"
-                          : "Inspect line"}
-                        {task.backupLost && <Badge tone="coral">Urgent</Badge>}
-                      </div>
                       <div className="task-stats">
                         <span>
-                          <Users size={13} />
-                          {fmt(task.affectedCustomers)}
+                          {fmt(task.affectedCustomers)} customers on pathway
                         </span>
                         <span>
-                          <HeartPulse size={13} />
-                          {task.affectedFacilities.length} critical
-                        </span>
-                        <span>
-                          <Clock3 size={13} />
+                          {task.status === "repair" ? "Repair" : "Inspect"} ·{" "}
                           {task.hours}h
                         </span>
                       </div>
-                      <p className="task-reason">
-                        {i === 0 && <ArrowUpRight size={13} />}
-                        {task.reason}
+                      <p
+                        className={`task-reason ${task.backupLost ? "urgent-reason" : ""}`}
+                      >
+                        {task.backupLost
+                          ? "Hospital backup power lost"
+                          : task.rural
+                            ? `${task.outage}h without power`
+                            : task.affectedCustomers > task.customers
+                              ? "Unlocks downstream work"
+                              : task.affectedFacilities.join(" · ") ||
+                                "Customer access pathway"}
                       </p>
                     </div>
                   </button>
@@ -734,15 +664,11 @@ export default function App() {
               >
                 <span>
                   <LockKeyhole size={14} />
-                  {blocked.length} tasks held for safety or dependencies
+                  {blocked.length} blocked lines
                 </span>
                 <ChevronRight size={16} />
               </button>
               <div className="priority-footer">
-                <p>
-                  <Info size={13} />
-                  Pathway counts overlap; do not add them.
-                </p>
                 <Button
                   kind={reviewed ? "reviewed" : "primary"}
                   icon={reviewed ? CheckCheck : Check}
@@ -759,15 +685,17 @@ export default function App() {
             <section className="panel activity-panel" id="activity">
               <div className="panel-heading">
                 <div>
-                  <h2>What changed</h2>
-                  <p>A traceable decision, not a black box.</p>
+                  <h2>Latest update</h2>
                 </div>
-                <Badge>
-                  {events.length} {events.length === 1 ? "event" : "events"}
-                </Badge>
+                <button
+                  className="text-button"
+                  onClick={() => setModal("activity")}
+                >
+                  View history
+                </button>
               </div>
               <div className="event-list" aria-live="polite">
-                {events.slice(0, 3).map((event, i) => (
+                {events.slice(0, 1).map((event, i) => (
                   <article
                     className="event"
                     key={`${event.title}-${event.time}`}
@@ -786,9 +714,16 @@ export default function App() {
                     <div>
                       <div className="event-heading">
                         <h3>{event.title}</h3>
-                        <time>{event.time}</time>
                       </div>
-                      <p>{event.detail}</p>
+                      <p>
+                        {event.type === "backup"
+                          ? "Juniper moves to first priority."
+                          : event.type === "access"
+                            ? "Juniper blocked. Aspen now needs repair."
+                            : event.type === "crew"
+                              ? "Crew Charlie joins the available crews."
+                              : `${eligible[0]?.name || "No eligible line"} leads the current plan.`}
+                      </p>
                     </div>
                   </article>
                 ))}
@@ -797,26 +732,20 @@ export default function App() {
             <section className="panel crew-panel" id="crews">
               <div className="panel-heading">
                 <div>
-                  <h2>Crew coordination</h2>
-                  <p>Illustrative regional resource sharing</p>
+                  <h2>Crews</h2>
                 </div>
-                <Network size={18} className="muted" />
+                <button
+                  className="text-button"
+                  onClick={() => setModal("crews")}
+                >
+                  Details
+                </button>
               </div>
               <div className="crew-list">
                 {CREWS.map((crew, i) => (
                   <div className="crew" key={crew.id}>
-                    <span
-                      className={`crew-avatar ${i >= crewCount ? "standby" : ""}`}
-                    >
-                      {crew.initials}
-                    </span>
                     <div>
                       <strong>{crew.name}</strong>
-                      <small>
-                        {i === 2
-                          ? "Partner service area · mutual aid"
-                          : `Valley district · ${crew.role.toLowerCase()}`}
-                      </small>
                     </div>
                     <Badge tone={i < crewCount ? "sage" : "neutral"}>
                       {i < crewCount ? "Available" : "Standby"}
@@ -824,23 +753,9 @@ export default function App() {
                   </div>
                 ))}
               </div>
-              <div className="crew-note">
-                <Info size={13} />
-                <span>
-                  Simulated availability. No requests or messages sent.
-                </span>
-              </div>
             </section>
           </div>
           <footer className="page-footer">
-            <div>
-              <span className="status-dot" />
-              <strong>Simulated incident data</strong>
-              <span>
-                Presentation prototype · No live grid connection · Illustrative
-                scoring, no AI service connected
-              </span>
-            </div>
             <button onClick={() => setModal("sources")}>
               Sources & assumptions
               <ArrowUpRight size={14} />
@@ -851,6 +766,42 @@ export default function App() {
       <div className="sr-only" role="status" aria-live="polite">
         {toast}
       </div>
+      {modal === "activity" && (
+        <Dialog title="Field update history" onClose={() => setModal(null)}>
+          {events.map((event) => (
+            <article
+              className="history-entry"
+              key={`${event.title}-${event.time}`}
+            >
+              <h3>{event.title}</h3>
+              <p>{event.detail}</p>
+            </article>
+          ))}
+        </Dialog>
+      )}
+      {modal === "crews" && (
+        <Dialog title="Crew details" onClose={() => setModal(null)}>
+          {CREWS.map((crew, i) => (
+            <article className="history-entry" key={crew.id}>
+              <h3>
+                {crew.name} · {i < crewCount ? "Available" : "Standby"}
+              </h3>
+              <p>
+                {crew.role}
+                {i === 2
+                  ? " · Partner service area, simulated mutual aid"
+                  : " · Valley district"}
+              </p>
+            </article>
+          ))}
+          <div className="notice">
+            <Info size={18} />
+            <p>
+              Availability is simulated. No crew requests or messages are sent.
+            </p>
+          </div>
+        </Dialog>
+      )}
       {modal === "compare" && (
         <Comparison
           lines={lines}
@@ -991,7 +942,8 @@ export default function App() {
       {modal === "review" && (
         <Dialog title="Operator review" onClose={() => setModal(null)}>
           <p className="dialog-intro">
-            Review this proposed sequence. This demo records a local review
+            Review this proposed sequence. Pathway counts include downstream
+            customers and must not be added. This demo records a local review
             only.
           </p>
           <ol className="review-list">

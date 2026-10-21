@@ -109,7 +109,7 @@ export default function NetworkMap({ lines, onSelect, selected }) {
   const [ready, setReady] = useState(false);
   const [error, setError] = useState(false);
   const [facilities, setFacilities] = useState(true);
-  const [showNames, setShowNames] = useState(true);
+  const [showNames, setShowNames] = useState(false);
   callback.current = onSelect;
   const fit = () =>
     mapRef.current?.fitBounds(
@@ -248,12 +248,10 @@ export default function NetworkMap({ lines, onSelect, selected }) {
       const dot = document.createElement("span");
       dot.className = "geo-node-dot";
       button.append(dot);
-      if (showNames) {
+      if (showNames || selected === line.id) {
         const label = document.createElement("span");
         label.className = "geo-node-label";
-        label.textContent = line.parent
-          ? `${line.id} ${line.short}`
-          : "Demo substation";
+        label.textContent = line.parent ? line.short : "Demo substation";
         button.append(label);
       }
       button.addEventListener("click", () => callback.current(line.id));
@@ -278,7 +276,11 @@ export default function NetworkMap({ lines, onSelect, selected }) {
         facility.append(cross, label);
         facility.addEventListener("click", () => callback.current(line.id));
         markers.current.push(
-          new Marker({ element: facility, anchor: "bottom", offset: [0, -17] })
+          new Marker({
+            element: facility,
+            anchor: line.id === "L02" ? "left" : "bottom",
+            offset: line.id === "L02" ? [16, 0] : [0, -17],
+          })
             .setLngLat(POINTS[line.id])
             .addTo(map),
         );
@@ -299,14 +301,9 @@ export default function NetworkMap({ lines, onSelect, selected }) {
       <div className="panel-heading">
         <div>
           <h2 id="network-title">Network map</h2>
-          <p>Boulder County, Colorado · Simulated feeder network</p>
         </div>
-        <span className="map-data-tag">Real basemap</span>
       </div>
       <div className="map-toolbar">
-        <div className="map-layer-label">
-          <span className="map-line-sample" />7 feeder segments
-        </div>
         <div className="map-toggles">
           <label>
             <input
@@ -344,9 +341,7 @@ export default function NetworkMap({ lines, onSelect, selected }) {
             <button onClick={() => location.reload()}>Retry</button>
           </div>
         )}
-        <div className="map-overlay-notice">
-          DEMO OVERLAY · NOT UTILITY ASSETS
-        </div>
+        <div className="map-overlay-notice">Simulated feeder lines</div>
         {lines.some((l) => l.backupLost) && (
           <div className="map-incident">
             <span />
@@ -378,10 +373,11 @@ export default function NetworkMap({ lines, onSelect, selected }) {
           </button>
         </div>
       </div>
-      <div
+      <details
         className="mobile-line-list"
         aria-label="Readable network segment list"
       >
+        <summary>All line segments</summary>
         {lines
           .filter((l) => l.parent)
           .map((l) => (
@@ -401,7 +397,7 @@ export default function NetworkMap({ lines, onSelect, selected }) {
               </span>
             </button>
           ))}
-      </div>
+      </details>
       <div className="legend">
         <span>
           <i style={{ background: "#1a73e8" }} />

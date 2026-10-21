@@ -26,6 +26,8 @@ Open the local URL printed by Vite. `npm run build` produces a static `dist/` di
 
 The navigation scrolls within this one dashboard. There are no separate product pages or account flows. Sources and assumptions live in a supporting dialog; a JSON export saves only the fictional scenario.
 
+The overview emphasizes four impact numbers, the map, and the next eligible tasks. Supporting captions and duplicate badges are omitted. Map line names are off by default except for the selected line; **Line labels** reveals all names. **View history** and crew **Details** retain the full information without crowding the presentation screen. Click a task for its complete scoring explanation.
+
 ## What the model means
 
 Safety and all upstream work are checked before a task can enter the eligible queue. The fictional radial-network model conservatively blocks downstream work until upstream inspection/repair is complete. This is a demonstration assumption, not a representation of every utility's field procedures.
